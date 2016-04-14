@@ -292,6 +292,7 @@ while ($row = $res->fetch_assoc()) {
     }
 }
 push($data);
+printf("[%s] %d entries pushed to easticsearch\n", $j, gmdate('H:i:s', microtime(true) - $start));
 
 printf("[%s] Pushing details\n", gmdate('H:i:s', microtime(true) - $start));
 
@@ -318,3 +319,4 @@ while ($row = $res->fetch_assoc()) {
     }
 }
 push($data);
+printf("[%s] %d entries pushed to easticsearch\n", $j, gmdate('H:i:s', microtime(true) - $start));
